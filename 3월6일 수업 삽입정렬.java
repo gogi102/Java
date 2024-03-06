@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class insertionarray {
 
 	public static void main(String[] args) {
-		int[] arr = new int[] {8,23,14,26,27};//리스트 생성
+		int[] arr = new int[] {23,8,14,12,57};//리스트 생성
 		
 		for(int i = 1; i < arr.length; i++) {
 			for(int j = i; j > 0; j--) {
@@ -15,9 +15,11 @@ public class insertionarray {
 					arr[j-1] = temp;//원래있던 j-1을 j를 저장해둔 temp로 바꿈 
 				}
 			}
+			System.out.println(Arrays.toString(arr));//리스트의 값 출력 & 바뀌는 과정 출력
 		}
 	
-		System.out.println(Arrays.toString(arr));//리스트의 값 출력
+		
 	}
 
 }
+
