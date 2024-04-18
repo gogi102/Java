@@ -13,16 +13,16 @@ public class HashSetEx01 {
         for (int i = 0; i < N; i++){
             arr[i] = sc.nextInt();
         }
-        int targer = sc.nextInt();
+        int target = sc.nextInt();
 
 
-        System.out.println(solution(arr,targer));
+        System.out.println(solution(arr,target));
     }
     public static boolean solution(int[] arr, int target) {
         HashSet<Integer> set = new HashSet<>();
 
         for (int i : arr) {
-            if (set.contains(target - i)) {
+            if (set.contains(target - i)&& target-i != i) {
                 return true;
             }
             set.add(i);
