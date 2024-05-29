@@ -3,17 +3,10 @@ package poly.ex.pay1;
 public class PayService {
     public void processPay(String option, int amount){
 
-        Pay[] pays = {new NaverPay(), new KakaoPay()};
-
-        boolean result;
-
         System.out.println("결제를 시작합니다 option: "+ option+ ", amount: "+amount);
-        for (Pay pay: pays){
-            if (option.equals("kakao")){
 
-            }
-        }
-
+        Pay pay = Paystore.findPay(option);
+        boolean result = pay.pay(amount);
 
         if (result){
             System.out.println("결제가 성공했습니다");
