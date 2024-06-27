@@ -22,14 +22,15 @@ public class ex5 {
                 placeValue *= 10;
             }
 
-            // 알파벳 값을 오름차순 정렬
-            Arrays.sort(alphabet);
 
-            int ans = 0;
-            for (int i = 0; i < 10; i++) {
-                ans = ans + alphabet[25 - i] * (9-i);
-            }
-            System.out.println(ans);
         }
+        // 알파벳 값을 오름차순 정렬
+        Arrays.sort(alphabet);
+
+        int ans = 0;
+        for (int i = 0; i < 10; i++) {
+            ans = ans + alphabet[25 - i] * (9-i);
+        }
+        System.out.println(ans);
     }
 }
