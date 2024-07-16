@@ -1,6 +1,6 @@
 package enumeration.test.ex1;
 
-public class AuthGradeMain {
+public class AuthGradeMain2 {
     public static void main(String[] args) {
 
         AuthGrade[] grades = AuthGrade.values();
